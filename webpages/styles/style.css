@@ -278,6 +278,7 @@ p {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.3px;
+  font-weight: 400;
 }
 
 header {
@@ -313,11 +314,157 @@ header .headerContainer ul li {
   margin-top: 14px;
 }
 header .headerContainer ul li .navGreen {
-  color: #9af07e;
+  color: #589321;
 }
 header .headerContainer ul li .material-icons {
   font-size: 25px;
 }
 header a {
   color: black;
+}
+
+footer .footerContainer {
+  padding: 60px;
+  background-color: #333333;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+footer .footerContainer div {
+  margin: 0 60px;
+  width: 22%;
+}
+footer hr {
+  width: 100%;
+  opacity: 50%;
+}
+
+.deliciousBox h4 {
+  font-size: 38px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #589321;
+  margin: 0 0 25px 0;
+}
+.deliciousBox p {
+  line-height: 24px;
+  color: #999999;
+}
+
+.recentPostsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.recentPostsBox h3 {
+  color: white;
+  letter-spacing: 0.6px;
+  margin: 0 0 30px 0;
+}
+.recentPostsBox a {
+  color: #999999;
+  line-height: 28px;
+}
+
+.subscribeBox h3 {
+  color: white;
+  letter-spacing: 0.6px;
+  margin: 0 0 30px 0;
+}
+.subscribeBox p {
+  line-height: 24px;
+  color: #999999;
+}
+.subscribeBox form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 35px;
+}
+.subscribeBox button a {
+  color: white;
+  font-size: 27px;
+  padding: 0 15px;
+}
+.subscribeBox hr {
+  margin: 23px 0 15px 0;
+}
+.subscribeBox .socialsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 120px;
+  height: 25px;
+  margin: 0;
+}
+.subscribeBox .socialsBox img {
+  width: 25px;
+  height: 25px;
+}
+
+.footerButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 10px;
+  background-color: #589321;
+  border: none;
+  width: 20%;
+}
+
+.footerButton:hover {
+  background-color: rgb(115, 176, 45);
+}
+
+.formBox {
+  width: 80%;
+  background-color: rgb(101, 100, 100);
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.bottomBar {
+  background-color: #2E2E2E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bottomBar p {
+  color: white;
+  margin-left: 152px;
+  font-weight: 200;
+}
+.bottomBar p span {
+  color: #589321;
 }
