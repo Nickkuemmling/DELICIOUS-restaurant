@@ -279,3 +279,45 @@ p {
   line-height: 24px;
   letter-spacing: 0.3px;
 }
+
+header {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+header .headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .headerContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .headerContainer ul li {
+  padding: 20px 12px;
+  margin-top: 14px;
+}
+header .headerContainer ul li .navGreen {
+  color: #9af07e;
+}
+header .headerContainer ul li .material-icons {
+  font-size: 25px;
+}
+header a {
+  color: black;
+}
