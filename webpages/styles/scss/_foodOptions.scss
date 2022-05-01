@@ -1,0 +1,29 @@
+.foodOptionsContainer {
+    background-color: $whiteBackground;
+    display: flex;
+    flex-direction: row;
+    img {
+        width: 50%;
+        height: 500px;
+    }
+    .optionsBox {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        ul {
+            justify-content: end;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            li {
+                width: 270px;
+                p{
+                    color: $greyBackground;
+                }
+                h3 {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

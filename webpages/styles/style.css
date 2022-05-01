@@ -242,8 +242,6 @@ html {
 }
 
 img {
-  height: 250px;
-  width: 250px;
   display: inline-block;
 }
 
@@ -282,6 +280,7 @@ p {
 }
 
 header {
+  background-image: url(./assets/home-1.jpeg);
   font-family: "Raleway", sans-serif;
   font-size: 16px;
 }
@@ -319,8 +318,209 @@ header .headerContainer ul li .navGreen {
 header .headerContainer ul li .material-icons {
   font-size: 25px;
 }
+header .headerContainer ul a:hover {
+  text-decoration: underline;
+}
 header a {
   color: black;
+}
+
+.popularRecipesContainer {
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.popularRecipesContainer h2::after {
+  content: "";
+  display: block;
+  background-color: #589321;
+  height: 3px;
+  width: 55px;
+  margin: 20px 0 0 85px;
+}
+.popularRecipesContainer .recipesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+.popularRecipesContainer .recipesContainer p {
+  width: 500px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.popularRecipesContainer .recipesContainer button {
+  border: none;
+  background-color: #589321;
+  height: 50px;
+}
+.popularRecipesContainer .recipesContainer button a {
+  color: #F6F6F6;
+  padding: 25px 25px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.popularRecipesContainer .recipesContainer button:hover {
+  background-color: rgb(115, 176, 45);
+}
+.popularRecipesContainer img {
+  width: 50%;
+  height: 500px;
+}
+
+.foodOptionsContainer {
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.foodOptionsContainer img {
+  width: 50%;
+  height: 500px;
+}
+.foodOptionsContainer .optionsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+}
+.foodOptionsContainer .optionsBox ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.foodOptionsContainer .optionsBox ul li {
+  width: 270px;
+}
+.foodOptionsContainer .optionsBox ul li p {
+  color: #999999;
+}
+.foodOptionsContainer .optionsBox ul li h3 {
+  margin-bottom: 0;
+}
+
+.ourRestaurantsContainer {
+  padding: 160px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ourRestaurantsContainer .photoPositioning {
+  position: relative;
+}
+.ourRestaurantsContainer .chairsPhoto {
+  width: 400px;
+  height: 280px;
+}
+.ourRestaurantsContainer .pinkCircle {
+  position: absolute;
+  bottom: 208px;
+  right: -69px;
+  width: 170px;
+  height: 170px;
+}
+.ourRestaurantsContainer h2::after {
+  content: "";
+  display: block;
+  background-color: #589321;
+  height: 3px;
+  width: 55px;
+  margin: 12px 0 0 70px;
+}
+.ourRestaurantsContainer p {
+  text-align: center;
+  width: 70ch;
+  margin: 0;
+}
+
+.galleryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.galleryContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.galleryContainer ul li {
+  width: 33%;
+}
+.galleryContainer ul li img {
+  width: 100%;
+}
+
+.hungryClientsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgb(188, 228, 153);
+  padding: 150px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hungryClientsContainer h2::after {
+  content: "";
+  display: block;
+  background-color: #589321;
+  height: 3px;
+  width: 55px;
+  margin: 10px 0 0 60px;
+}
+.hungryClientsContainer p {
+  text-align: center;
+  width: 750px;
 }
 
 footer .footerContainer {
@@ -350,8 +550,10 @@ footer hr {
   font-size: 38px;
   line-height: 24px;
   letter-spacing: 0.5px;
-  color: #589321;
   margin: 0 0 25px 0;
+}
+.deliciousBox h4 a {
+  color: #589321;
 }
 .deliciousBox p {
   line-height: 24px;
@@ -462,7 +664,7 @@ footer hr {
 }
 .bottomBar p {
   color: white;
-  margin-left: 152px;
+  margin: 5px 0 5px 152px;
   font-weight: 200;
 }
 .bottomBar p span {
