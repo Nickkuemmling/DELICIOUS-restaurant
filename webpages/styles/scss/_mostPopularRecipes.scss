@@ -32,12 +32,13 @@
                 font-size: 14px;
             }
         }
-        button:hover {
+        button:hover,
+        button:focus {
             background-color: rgb(115, 176, 45);
         }
     }
     img {
         width: 50%;
-        height: 500px;
+        height: 590px;
     }
 }

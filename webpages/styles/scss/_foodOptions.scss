@@ -4,12 +4,17 @@
     flex-direction: row;
     img {
         width: 50%;
-        height: 500px;
+        height: 590px;
     }
     .optionsBox {
         display: flex;
-        flex-direction: row;
-        width: 50%;
+        flex-direction: column;
+        width: 25%;
+        justify-content: center;
+        span {
+            position: absolute;
+            right: 50px;
+        }
         ul {
             justify-content: end;
             display: flex;

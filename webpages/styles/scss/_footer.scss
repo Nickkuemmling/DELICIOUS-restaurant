@@ -43,6 +43,13 @@ footer {
     a {
         color: $greyBackground;
         line-height: 28px;
+        padding: 8px;
+    }
+    hr {
+        margin: 0;
+    }
+    a:hover {
+        opacity: 60%;
     }
 }
 
@@ -66,7 +73,7 @@ footer {
         color: white;
         font-size: 27px;
         padding: 0 15px;
-    }
+        }
     }
     hr {
         margin: 23px 0 15px 0;
@@ -77,9 +84,15 @@ footer {
         width: 120px;
         height: 25px;
         margin: 0;
+        a {
+            padding: 10px 10px 25px 10px;
+        }
         img {
             width: 25px;
             height: 25px;
+        }
+        img:hover {
+            opacity: 75%;
         }
     }
 }
@@ -94,8 +107,9 @@ footer {
     width: 20%;
 }
 
-.footerButton:hover {
-    background-color: rgb(115, 176, 45);
+.footerButton:hover, 
+.footerButton:focus {
+background-color: rgb(115, 176, 45);
 }
 
 .formBox {

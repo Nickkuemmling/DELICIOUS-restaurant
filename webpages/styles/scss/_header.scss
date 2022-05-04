@@ -1,10 +1,13 @@
 header {
-    background-image: url(./assets/home-1.jpeg);
+    background-image: url("../../assets/home-1.jpeg");
+    height: 80vh;
+    width: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
     .headerContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         ul {
             display: flex;
             flex-direction: row;
@@ -19,7 +22,11 @@ header {
                     font-size: 25px;
                 }
             }
-            a:hover {
+            a {
+                transition: text-decoration 0.1s ease-in;
+            }
+            a:hover,
+            a:focus {
             text-decoration: underline;
             }
         }
