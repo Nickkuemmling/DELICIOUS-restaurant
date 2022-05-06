@@ -1,9 +1,25 @@
 header {
-    background-image: url("../../assets/home-1.jpeg");
-    height: 80vh;
-    width: 100%;
-    background-position: center top;
-    background-repeat: no-repeat;
+    .heroBannerIndex {
+        background-image: url("../../assets/home-1.jpeg");
+        height: 80vh;
+        width: 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+    .heroBannerBlog {
+        background-image: url("../../assets/blog-1.jpeg");
+        height: 80vh;
+        width: 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+    .heroBannerContact {
+        background-image: url("../../assets/contact-1.jpeg");
+        height: 80vh;
+        width: 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
     .headerContainer {
         display: flex;
         flex-direction: row;

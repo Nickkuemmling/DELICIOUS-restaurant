@@ -257,7 +257,7 @@ a {
   transition: 0.1s ease-in;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -273,7 +273,7 @@ h2 {
   letter-spacing: 0.5px;
 }
 
-p {
+gr p {
   font-family: "Lora", serif;
   font-size: 14px;
   line-height: 24px;
@@ -282,13 +282,29 @@ p {
 }
 
 header {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+header .heroBannerIndex {
   background-image: url("../../assets/home-1.jpeg");
   height: 80vh;
   width: 100%;
   background-position: center top;
   background-repeat: no-repeat;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
+}
+header .heroBannerBlog {
+  background-image: url("../../assets/blog-1.jpeg");
+  height: 80vh;
+  width: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+header .heroBannerContact {
+  background-image: url("../../assets/contact-1.jpeg");
+  height: 80vh;
+  width: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 header .headerContainer {
   display: -webkit-box;
@@ -543,6 +559,141 @@ header a {
 .hungryClientsContainer p {
   text-align: center;
   width: 750px;
+}
+
+h5 {
+  font-size: 15px;
+  margin: 14px 0;
+}
+
+.lineStyling {
+  margin: 30px 0;
+  opacity: 50%;
+}
+
+.pineappleChickenContainer p {
+  color: rgb(84, 84, 84);
+}
+.pineappleChickenContainer .tagsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.pineappleChickenContainer .socialsBox {
+  width: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10px;
+}
+.pineappleChickenContainer .socialsBox img {
+  opacity: 40%;
+  height: 18px;
+  width: 18px;
+}
+.pineappleChickenContainer .socialsBox img:hover {
+  opacity: 30%;
+}
+
+.mainPostContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+}
+.mainPostContainer hr {
+  margin: 30px 0;
+  opacity: 50%;
+}
+.mainPostContainer .mainPostText {
+  background-color: rgb(243, 243, 243);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.mainPostContainer .mainPostText p {
+  margin: 0 30px;
+  line-height: 28px;
+  color: rgb(94, 94, 94);
+}
+.mainPostContainer .mainPostText h5 {
+  letter-spacing: 0.7px;
+  margin: 15px 0 25px 30px;
+}
+
+.relatedPostsImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+.relatedPostsImgContainer p {
+  color: rgb(94, 94, 94);
+}
+.relatedPostsImgContainer p .blackText {
+  color: black;
+}
+.relatedPostsImgContainer img {
+  margin-top: 25px;
+  height: 219.25px;
+  width: 425.5px;
+}
+
+.commentsContainer .commentsCard {
+  gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px 0;
+}
+.commentsContainer .commentsCard p {
+  margin: 0 30px;
+  line-height: 28px;
+  color: #333333;
+}
+.commentsContainer .commentsCard img {
+  width: 70px;
+  height: 70px;
+}
+.commentsContainer .commentsCard .commentsText {
+  background-color: rgb(243, 243, 243);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0;
 }
 
 footer .footerContainer {
