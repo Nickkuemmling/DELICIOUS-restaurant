@@ -11,8 +11,14 @@ h5 {
 // PINEAPPLE CHICKEN HEADING TEXT AND LINKS
 
 .pineappleChickenContainer {
+    h1 {
+        margin-bottom: 5px;
+    }
     p {
         color: rgb(84, 84, 84)
+    }
+    .postDate {
+        margin: 0 0 40px 0;
     }
     .tagsContainer {
         display: flex;
@@ -29,7 +35,8 @@ h5 {
             height: 18px;
             width: 18px;
         }
-        img:hover {
+        img:hover,
+        img:focus {
             opacity: 30%;
         }
     }
@@ -105,5 +112,52 @@ h5 {
             flex-direction: column;
             padding: 30px 0;
         }
+    }
+}
+
+// LEAVE A CONTENT FORM
+
+.commentsFormContainer {
+    display: flex;
+    flex-direction: column;
+    p {
+        color: rgb(142, 142, 142);
+        font-family: 'Lora', serif;
+
+    }
+    input, textarea {
+        border: .7px solid rgb(216, 216, 216);
+        border-radius: 0;
+    }
+    .nameEmailContainer {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        input {
+            width: 33.33%;
+            height: 35px;
+            color: rgb(142, 142, 142);
+        }
+    }
+    .commentButton {
+        font-family: 'Raleway', sans-serif;
+        height: 55px;
+        width: 190px;
+        font-size: 14px;
+        background-color: $mainGreen;
+        margin-bottom: 120px;
+        color: white;
+    }
+    .commentButton:hover,
+    .commentButton:focus {
+        background-color: rgb(115, 176, 45);
+    }
+    textarea {
+    height: 180px;
+    margin: 20px 0;
+    width: 100%;
+    color: rgb(142, 142, 142);
+    resize: none;
     }
 }

@@ -15,11 +15,16 @@ $mainGreen: #589321;
 //     background-color: $whiteBackground;
 // }
 
+html {
+    box-sizing: border-box;
+}
+
 .wrapper {
     max-width: 1600px;
     width: 90%;
     margin: 0 auto;
 }
+
 
 img {
     // height: 250px;
@@ -45,7 +50,7 @@ h1, h2, h3, h4, h5 {
 
 h1, h4 {
     font-size: 46px;
-    line-height: 24px;
+    line-height: 40px;
     letter-spacing: 1.1px;
 }
 
@@ -53,7 +58,7 @@ h2 {
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.5px;
-}gr
+}
 
 p {
     font-family: 'Lora', serif;

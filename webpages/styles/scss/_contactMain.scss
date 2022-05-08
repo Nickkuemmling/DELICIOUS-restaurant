@@ -1,0 +1,84 @@
+// DROP US A LINE FORM
+
+.mainContactContainer {
+    display: flex;
+    flex-direction: row;
+
+    gap: 25px;
+    input, textarea {
+    border: none;
+    border-radius: 0;
+    width: 50%;
+    height: 35px;
+    color: rgb(124, 124, 124);
+    background-color: rgb(243, 243, 243);
+    }
+    .dropUsALineContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 55%;
+        }
+    .nameEmailContainer {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .subjectColumn {
+        display: flex;
+        flex-direction: column;
+    }
+    .dropUsALineSubject {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .dropUsALineMessage {
+        width: 100%;
+        height: 200px;
+        resize: none;
+    }
+    .commentButton {
+        font-family: 'Raleway', sans-serif;
+        height: 55px;
+        width: 190px;
+        font-size: 14px;
+        color: $mainGreen;
+        background-color: white;
+        border: none;
+        text-align: left;
+    }
+}
+
+// CONTACT DETAILS
+
+
+.contactDetailsContainer {
+    width: 45%;
+    background-color: rgb(243, 243, 243);
+    padding: 30px;
+    p {
+        margin: 0;
+        color: rgb(124, 124, 124);
+        line-height: 28px;
+        max-width: 300px;
+        .blackText {
+            color: black;
+        }
+    }
+    .contactInfoMargin {
+        margin: 25px 0;
+    }
+    h5 {
+        margin-top: 60px;
+    }
+}
+
+.lowerBackgroundImage {
+    background-image: url("../../assets/contact-2.jpeg");
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
