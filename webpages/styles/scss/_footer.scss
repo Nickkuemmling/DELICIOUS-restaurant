@@ -1,3 +1,5 @@
+//MAIN FOOTER CONTAINER 
+
 footer {
     .footerContainer {
         padding: 60px;
@@ -5,16 +7,20 @@ footer {
         justify-content: center;
         display: flex;
         flex-direction: row;
+
         div {
             margin: 0 60px;
             width: 22%;
         }
     }
+
     hr {
         width: 100%;
         opacity: 50%;
     }
 }
+
+// LOCATION, EMAIL AND PHONE NUMBER INFO
 
 .deliciousBox {
     h4 {
@@ -22,36 +28,46 @@ footer {
         line-height: 24px;
         letter-spacing: 0.5px;
         margin: 0 0 25px 0;
+
         a {
             color: $mainGreen;
         }
     }
+
     p {
         line-height: 24px;
         color: $greyBackground;
     }
 }
 
+// RECENT POSTS LINKS
+
 .recentPostsBox {
     display: flex;
     flex-direction: column;
+
     h3 {
         color: white;
         letter-spacing: 0.6px;
         margin: 0 0 30px 0;
     }
+
     a {
         color: $greyBackground;
         line-height: 28px;
         padding: 8px;
     }
+
     hr {
         margin: 0;
     }
+
     a:hover {
         opacity: 60%;
     }
 }
+
+// SUBSCRIPTIONS FORM 
 
 .subscribeBox {
     h3 {
@@ -59,38 +75,48 @@ footer {
         letter-spacing: 0.6px;
         margin: 0 0 30px 0;
     }
+
     p {
         line-height: 24px;
         color: $greyBackground;
     }
+
     form {
         display: flex;
         flex-direction: row;
         height: 35px;
     }
+
     button {
-    a {
-        color: white;
-        font-size: 27px;
-        padding: 0 15px;
+        a {
+            color: white;
+            font-size: 27px;
+            padding: 0 15px;
         }
     }
+
     hr {
         margin: 23px 0 15px 0;
     }
+
+    // SOCIALS LINKS
+
     .socialsBox {
         display: flex;
         justify-content: space-between;
         width: 120px;
         height: 25px;
         margin: 0;
+
         a {
             padding: 10px 10px 25px 10px;
         }
+
         img {
             width: 25px;
             height: 25px;
         }
+
         img:hover {
             opacity: 75%;
         }
@@ -107,37 +133,37 @@ footer {
     width: 20%;
 }
 
-.footerButton:hover, 
+.footerButton:hover,
 .footerButton:focus {
-background-color: rgb(115, 176, 45);
+    background-color: rgb(115, 176, 45);
 }
 
 .formBox {
-width: 80%;
-background-color: rgb(101, 100, 100);
-color: white;
-border: none;
-border-radius: 0;
-font-size: 12px;
-font-style: italic;
-letter-spacing: 0.5px;
+    width: 80%;
+    background-color: rgb(101, 100, 100);
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.5px;
 }
 
-
-
-
+// BOTTOM COPYRIGHT BAR
 
 .bottomBar {
     background-color: $header;
     display: flex;
     align-items: center;
+    justify-content: center;
+
     p {
         color: white;
-        margin: 5px 0 5px 152px;
+        // margin: 5px 0 5px 152px;
         font-weight: 200;
+
         span {
             color: $mainGreen;
         }
     }
 }
-

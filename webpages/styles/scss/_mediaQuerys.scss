@@ -1,0 +1,163 @@
+// HEADER 480px
+
+@media (max-width:480px) {
+    header {
+        .headerContainer {
+            flex-direction: column;
+            align-items: center;
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    padding: 0;
+                    margin: 15px;
+
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    // INDEX MAIN 480px RESOLUTION
+
+    .popularRecipesContainer {
+        flex-direction: column;
+
+        img {
+            width: 100%;
+            height: 60%;
+            margin: 30px 0;
+        }
+
+        .recipesContainer {
+            width: 100%;
+        }
+    }
+
+    .foodOptionsContainer {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 60%;
+        }
+
+        .optionsBox {
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+
+            ul {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .ourRestaurantsContainer {
+        .pinkCircle {
+            height: 60%;
+            width: 47%;
+            right: -31px;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        p {
+            width: 90%;
+        }
+    }
+
+    .hungryClientsContainer {
+        p {
+            width: 380px;
+        }
+
+    }
+    
+    .blockQuote::after {
+        left: 800px;
+        top: 100px;
+    }
+    
+    .blockQuote::before {
+        right: 800px;
+        bottom: 0px;
+    }
+    footer {
+        .footerContainer {
+            div {
+                width: 100%;
+            }
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .recentPostsBox {
+            h3 {
+                margin-top: 30px;
+            }
+        }
+
+        .subscribeBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                margin-top: 30px;
+            }
+
+        }
+    }
+}
+
+// BLOG 480px RESOLUTION
+
+@media (max-width:480px) {
+    .mainPostContainer {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    .relatedPostsImgContainer {
+        flex-direction: column;
+    }
+}
+
+// CONTACT 480px RESOLUTION
+
+@media (max-width:480px) {
+    header {
+        .heroBannerContact {
+            height: 70vh;
+        }
+    }
+
+    .mainContactContainer {
+        flex-direction: column;
+
+        .contactDetailsContainer {
+            width: 100%;
+        }
+
+        .dropUsALineContainer {
+            width: 100%;
+        }
+    }
+}

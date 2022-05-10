@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -294,7 +295,8 @@ header .heroBannerIndex {
   background-image: url("../../assets/home-1.jpeg");
   height: 80vh;
   width: 100%;
-  background-position: center top;
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 header .heroBannerBlog {
@@ -302,6 +304,7 @@ header .heroBannerBlog {
   height: 70vh;
   width: 100%;
   background-position: center top;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 header .heroBannerContact {
@@ -309,6 +312,7 @@ header .heroBannerContact {
   height: 65vh;
   width: 100%;
   background-position: center top;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 header .headerContainer {
@@ -394,7 +398,7 @@ header a {
   width: 50%;
 }
 .popularRecipesContainer .recipesContainer p {
-  width: 500px;
+  max-width: 500px;
   text-align: center;
   margin-bottom: 35px;
 }
@@ -462,6 +466,7 @@ header a {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: 70px;
 }
 .foodOptionsContainer .optionsBox ul li {
   width: 270px;
@@ -471,6 +476,15 @@ header a {
 }
 .foodOptionsContainer .optionsBox ul li h3 {
   margin-bottom: 0;
+}
+.foodOptionsContainer .optionsBox .iconContainer {
+  position: relative;
+}
+.foodOptionsContainer .optionsBox .iconContainer .material-icons {
+  position: absolute;
+  right: 300px;
+  font-size: 40px;
+  color: #333333;
 }
 
 .ourRestaurantsContainer {
@@ -515,6 +529,7 @@ header a {
   text-align: center;
   width: 70ch;
   margin: 0;
+  color: #999999;
 }
 
 .galleryContainer {
@@ -564,6 +579,27 @@ header a {
 .hungryClientsContainer p {
   text-align: center;
   width: 750px;
+}
+.hungryClientsContainer .blockQuote {
+  position: relative;
+}
+.hungryClientsContainer .blockQuote::before {
+  content: "❝";
+  font-size: 100px;
+  position: absolute;
+  left: -90px;
+  top: -20px;
+  color: rgb(235, 235, 235);
+  opacity: 70%;
+}
+.hungryClientsContainer .blockQuote::after {
+  content: "❞";
+  font-size: 100px;
+  color: rgb(235, 235, 235);
+  opacity: 70%;
+  position: absolute;
+  right: -80px;
+  bottom: -42px;
 }
 
 h5 {
@@ -623,6 +659,7 @@ h5 {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 30px;
+  margin: 35px 0;
 }
 .mainPostContainer hr {
   margin: 30px 0;
@@ -676,6 +713,9 @@ h5 {
   width: 425.5px;
 }
 
+.commentsContainer h5 {
+  margin: 35px 0;
+}
 .commentsContainer .commentsCard {
   gap: 30px;
   display: -webkit-box;
@@ -693,8 +733,8 @@ h5 {
   color: #333333;
 }
 .commentsContainer .commentsCard img {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
 }
 .commentsContainer .commentsCard .commentsText {
   background-color: rgb(243, 243, 243);
@@ -705,7 +745,20 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 0;
+  width: 100%;
+  padding: 20px 0;
+}
+.commentsContainer .commentsCard .commentsP {
+  margin: 10px 0;
+  margin-left: 30px;
+}
+.commentsContainer .commentsTextBold {
+  font-weight: 600;
+  font-size: 18px;
+}
+.commentsContainer .commentDate {
+  font-weight: 600;
+  font-size: 13px;
 }
 
 .commentsFormContainer {
@@ -721,7 +774,8 @@ h5 {
   color: rgb(142, 142, 142);
   font-family: "Lora", serif;
 }
-.commentsFormContainer input, .commentsFormContainer textarea {
+.commentsFormContainer input,
+.commentsFormContainer textarea {
   border: 0.7px solid rgb(216, 216, 216);
   border-radius: 0;
 }
@@ -774,7 +828,8 @@ h5 {
           flex-direction: row;
   gap: 25px;
 }
-.mainContactContainer input, .mainContactContainer textarea {
+.mainContactContainer input,
+.mainContactContainer textarea {
   border: none;
   border-radius: 0;
   width: 50%;
@@ -830,39 +885,43 @@ h5 {
   font-family: "Raleway", sans-serif;
   height: 55px;
   width: 190px;
+  margin-top: 5px;
   font-size: 14px;
   color: #589321;
   background-color: white;
   border: none;
   text-align: left;
 }
-
-.contactDetailsContainer {
+.mainContactContainer .commentButton:hover,
+.mainContactContainer .commentButton:focus {
+  opacity: 75%;
+}
+.mainContactContainer .contactDetailsContainer {
   width: 45%;
   background-color: rgb(243, 243, 243);
   padding: 30px;
 }
-.contactDetailsContainer p {
+.mainContactContainer .contactDetailsContainer p {
   margin: 0;
   color: rgb(124, 124, 124);
   line-height: 28px;
   max-width: 300px;
 }
-.contactDetailsContainer p .blackText {
+.mainContactContainer .contactDetailsContainer p .blackText {
   color: black;
 }
-.contactDetailsContainer .contactInfoMargin {
+.mainContactContainer .contactDetailsContainer .contactInfoMargin {
   margin: 25px 0;
 }
-.contactDetailsContainer h5 {
+.mainContactContainer .contactDetailsContainer h5 {
   margin-top: 60px;
 }
-
-.lowerBackgroundImage {
+.mainContactContainer .lowerBackgroundImage {
   background-image: url("../../assets/contact-2.jpeg");
   height: 60vh;
   width: 100%;
-  background-position: center;
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -1018,12 +1077,189 @@ footer hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .bottomBar p {
   color: white;
-  margin: 5px 0 5px 152px;
   font-weight: 200;
 }
 .bottomBar p span {
   color: #589321;
+}
+
+@media (max-width: 480px) {
+  header .headerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .headerContainer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .headerContainer ul li {
+    padding: 0;
+    margin: 15px;
+  }
+  header .headerContainer ul li a {
+    font-size: 18px;
+  }
+
+  .popularRecipesContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popularRecipesContainer img {
+    width: 100%;
+    height: 60%;
+    margin: 30px 0;
+  }
+  .popularRecipesContainer .recipesContainer {
+    width: 100%;
+  }
+
+  .foodOptionsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .foodOptionsContainer img {
+    width: 100%;
+    height: 60%;
+  }
+  .foodOptionsContainer .optionsBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .foodOptionsContainer .optionsBox ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .ourRestaurantsContainer .pinkCircle {
+    height: 60%;
+    width: 47%;
+    right: -31px;
+  }
+  .ourRestaurantsContainer h2 {
+    margin-top: 40px;
+  }
+  .ourRestaurantsContainer p {
+    width: 90%;
+  }
+
+  .hungryClientsContainer p {
+    width: 380px;
+  }
+
+  .blockQuote::after {
+    left: 800px;
+    top: 100px;
+  }
+
+  .blockQuote::before {
+    right: 800px;
+    bottom: 0px;
+  }
+
+  footer .footerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer .footerContainer div {
+    width: 100%;
+  }
+  footer .recentPostsBox h3 {
+    margin-top: 30px;
+  }
+  footer .subscribeBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .subscribeBox h3 {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .mainPostContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainPostContainer img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .relatedPostsImgContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  header .heroBannerContact {
+    height: 70vh;
+  }
+
+  .mainContactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainContactContainer .contactDetailsContainer {
+    width: 100%;
+  }
+  .mainContactContainer .dropUsALineContainer {
+    width: 100%;
+  }
 }

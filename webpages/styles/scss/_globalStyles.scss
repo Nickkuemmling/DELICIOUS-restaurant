@@ -11,10 +11,6 @@ $mainGreen: #589321;
 
 // GENERAL STYLES
 
-// html {
-//     background-color: $whiteBackground;
-// }
-
 html {
     box-sizing: border-box;
 }
@@ -25,10 +21,7 @@ html {
     margin: 0 auto;
 }
 
-
 img {
-    // height: 250px;
-    // width: 250px;
     display: inline-block;
 }
 
@@ -41,7 +34,6 @@ ul {
 a {
     text-decoration: none;
     transition:  0.1s ease-in;
-
 }
 
 h1, h2, h3, h4, h5 {

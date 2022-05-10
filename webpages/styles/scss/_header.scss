@@ -3,55 +3,68 @@ header {
         background-image: url("../../assets/home-1.jpeg");
         height: 80vh;
         width: 100%;
-        background-position: center top;
+        background-position: center center;
+        background-size: cover;
         background-repeat: no-repeat;
     }
+
     .heroBannerBlog {
         background-image: url("../../assets/blog-1.jpeg");
         height: 70vh;
         width: 100%;
         background-position: center top;
+        background-size: cover;
         background-repeat: no-repeat;
     }
+
     .heroBannerContact {
         background-image: url("../../assets/contact-1.jpeg");
         height: 65vh;
         width: 100%;
         background-position: center top;
+        background-size: cover;
         background-repeat: no-repeat;
     }
+
     .headerContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
         ul {
             display: flex;
             flex-direction: row;
             align-items: center;
+
             li {
                 padding: 20px 12px;
                 margin-top: 14px;
+
                 .navGreen {
                     color: $mainGreen;
                 }
+
                 .material-icons {
                     font-size: 25px;
                 }
             }
+
             a {
                 transition: text-decoration 0.1s ease-in;
             }
+
             a:hover,
             a:focus {
-            text-decoration: underline;
+                text-decoration: underline;
             }
         }
     }
-    a {color: black;}
-    font-family: 'Raleway', sans-serif;
+
+    a {
+        color: black;
+    }
+
+    font-family: 'Raleway',
+    sans-serif;
     font-size: 16px;
 }
-
-
-
-
