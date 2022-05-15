@@ -1095,15 +1095,28 @@ footer hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   header .headerContainer ul {
+    background-color: rgba(255, 255, 255, 0.945);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    max-width: 200px;
+    opacity: 0;
+    border: 4px solid #589321;
+    border-right: 12px solid #589321;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
   header .headerContainer ul li {
     padding: 0;
@@ -1112,7 +1125,33 @@ footer hr {
   header .headerContainer ul li a {
     font-size: 18px;
   }
+  header .navButtonContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .buttonToggle {
+    height: 110px;
+    width: 110px;
+    background-image: url(../../assets/javascriptHamburger.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
 
+  h1 {
+    line-height: 48px;
+  }
+}
+@media (max-width: 480px) {
   .popularRecipesContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
